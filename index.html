@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PlantLive</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+<body>
+    <div class="header">
+        <div class="left_head"></div>
+        <div class="name_head">
+            <h1 class="name">Посади жизнь</h1>
+        </div>
+        <div class="right_head" onclick="replace()"></div>
+    </div>
+    <div class="container">
+        <div class="offer">
+            <div class="offer_text">
+            <h2>ПРИСОЕДИНЯЙСЯ К НАШЕМУ ДВИЖЕНИЮ!</h2>
+            <p>
+                Наша команда растет с каждым днем и помогает нашей планете.
+                <br> Сажайте деревья вместе с нами и следите за нашим прогрессом!
+            </p>
+            </div>
+        </div>
+        <div class="counter">
+            <p class="counter_total">Мы уже посадили</p>
+            <h2 class="totalTrees" data-count="12304">12304</h2>
+            <div class="form">
+                <h3>Присоединяйся к нам!</h3>
+                <p>50р сажает дерево</p>
+                <div class="buttons">
+                    <button id="btn1" class="btn1">5 деревьев</button>
+                    <button id="btn2" class="btn2">20 деревьев</button>
+                    <br>
+                    <br>
+                    <button id="btn3" class="btn3">50 деревьев</button>
+                    <button id="btn4" class="btn4">100 деревьев</button>
+                    <br>
+                    <br>
+                    <label><input id="inp" type="text" class="input_num"  placeholder="Введите сколько хотите пожертвовать"></label>
+                </div>
+                <div class="main_button">
+                    <label class="finish" id="p">50</label>
+                    <br>
+                    <button id="main_btn" class="main_btn">Пожертвовать</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="content_h">1,6 млн гектаров в год — скорость сокращения лесов в России (по данным WWF).<br> Это шесть территорий Москвы.</h2>
+            <p class="content_p">
+            <br>Почему важно сажать деревья?
+                <br>01	Они регулируют круговорот воды
+                <br>02	Они являются домом для многих животных
+                <br>03	Они улучшают качество почвы
+                <br>04	Они являются источником пищи
+                <br>05	Они подавляют шум
+                <br>06	Они создают тень
+                <br>07	Они насыщают воздух кислородом
+                <br>08	Они замедляют изменение климата
+            </p>
+        </div>
+    </div>
+    <div class="bottom">
+        <p class="contact_1">Наши контакты: <a class="number" href="tel:+78005553535">88005553535</a></p>
+        <p class="contact_2">Сведения о нас: Готовятся</p>
+    </div>
+
+    <script src="app.js"></script>
+<script>
+    document.getElementById("main_btn").addEventListener("click", ()=>{
+        window.location.href = 'payment.html'
+    })
+</script>
+
+</body>
+</html>
